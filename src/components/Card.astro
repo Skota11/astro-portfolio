@@ -1,0 +1,15 @@
+---
+const {bgColor} = Astro.props
+const colors = [
+    {name : "sprout" , class : "bg-[#8abbd0]"},
+    {name : "vanilla" , class : "bg-[#b6d1e2]"}
+    ]
+---
+
+<div class:list={["rounded-xl bg-sprout p-8 shadow-lg duration-300 hover:shadow-2xl" , colors.map((color) => {
+    if (color.name == bgColor) {
+        return color.class
+    }
+})]}>
+	<slot />
+</div>
