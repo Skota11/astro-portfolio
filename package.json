@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.7",
+    "@astrojs/vercel": "^8.1.4",
     "@fontsource/poppins": "^5.2.6",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
