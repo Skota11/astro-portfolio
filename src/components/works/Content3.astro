@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon/components";
+import Card from "../Card.astro";
+---
+
+<div>
+  <h1 class="text-xl text-center my-4 flex items-center gap-x-4">
+    <Icon name={"mdi:people"} />
+    <span>TogetherYouTube</span>
+  </h1>
+  <Card bgColor="vanilla">
+    <div class="flex flex-col gap-y-4">
+      <div>
+        <p>同じ部屋のメンバーで動画をリアルタイムで同期して楽しめます。</p>
+      </div>
+      <a
+        href="https://together.tube.skota11.com/"
+        class="flex gap-x-2 items-center"
+      >
+        <Icon name={"mdi:link"} size={28} />
+        <span class="text-sm">https://together.tube.skota11.com</span>
+      </a>
+    </div>
+  </Card>
+</div>

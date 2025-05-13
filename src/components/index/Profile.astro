@@ -1,0 +1,27 @@
+---
+import Image from "astro/components/Image.astro";
+import Card from "../Card.astro";
+---
+
+<div>
+  <h1 class="text-center text-xl">こたのホームページへようこそ！</h1>
+  <h1 class="text-xl text-center my-4">Profile</h1>
+  <Card bgColor="sprout">
+    <div class="mb-4 flex items-center gap-x-6">
+      <Image
+        class="rounded-full"
+        src="https://avatars.githubusercontent.com/u/91359399"
+        alt=""
+        width={70}
+        height={70}
+        loading={"eager"}
+      />
+      <div>
+        <h1 class="text-xl">こた</h1>
+        <p class="text-sm text-gray-800">skota11</p>
+      </div>
+    </div>
+    <p class="text-sm">16yo / Student</p>
+    <div></div>
+  </Card>
+</div>

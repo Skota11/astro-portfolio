@@ -1,0 +1,51 @@
+---
+import Card from "../Card.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<div>
+  <h1 class="text-xl text-center my-4">Link</h1>
+  <Card bgColor="vanilla">
+    <div class="flex flex-col gap-y-4">
+      <!-- Github -->
+      <a href="https://github.com/Skota11">
+        <div class="flex gap-x-2 items-center">
+          <Icon name="mdi:github" width={40} height={40} />
+          <div>
+            <p class="text-lg">Github</p>
+            <p class="text-xs text-gray-800">@skota11</p>
+          </div>
+        </div>
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/Kota_pclive">
+        <div class="flex gap-x-2 items-center">
+          <Icon name="mdi:twitter" width={40} height={40} />
+          <div>
+            <p class="text-lg">Twitter</p>
+            <p class="text-xs text-gray-800">@Kota_pclive　(現在は鍵垢)</p>
+          </div>
+        </div>
+      </a>
+      <!-- Discord -->
+      <a href="https://discord.com/users/896299292845817856">
+        <div class="flex gap-x-2 items-center">
+          <Icon name="mdi:discord" width={40} height={40} />
+          <div>
+            <p class="text-lg">Discord</p>
+            <p class="text-xs text-gray-800">@Skota11</p>
+          </div>
+        </div>
+      </a>
+      <!-- Works -->
+      <a href="/works">
+        <div class="flex gap-x-2 items-center">
+          <Icon name="mdi:slash-forward" width={40} height={40} />
+          <div>
+            <p class="text-lg">過去に作ったもの</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </Card>
+</div>

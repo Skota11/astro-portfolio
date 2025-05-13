@@ -1,0 +1,11 @@
+---
+import Card from "../Card.astro";
+import StatusCard from "../react/StatusCard.tsx";
+---
+
+<div>
+  <h1 class="text-xl text-center my-4">Status</h1>
+  <Card bgColor="sprout">
+    <StatusCard client:visible />
+  </Card>
+</div>

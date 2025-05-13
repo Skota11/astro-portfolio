@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon/components";
+import Card from "../Card.astro";
+---
+
+<div>
+  <h1 class="text-xl text-center my-4 flex items-center gap-x-4">
+    <Icon name={"mdi:cards-playing"} />
+    <span>オンライン大富豪</span>
+  </h1>
+  <Card bgColor="sprout">
+    <div class="flex flex-col gap-y-4">
+      <div>
+        <p>ブラウザで大富豪をオンラインで遊べます。</p>
+        <p>現在制作中で8切りとスペ3返しのみのルールです。</p>
+      </div>
+      <a
+        href="https://millionaire-zeta.vercel.app/"
+        class="flex gap-x-2 items-center"
+      >
+        <Icon name={"mdi:link"} size={28} />
+        <span class="text-sm">https://millionaire-zeta.vercel.app</span>
+      </a>
+    </div>
+  </Card>
+</div>

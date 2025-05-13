@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon/components";
+import Card from "../Card.astro";
+---
+
+<div>
+  <h1 class="text-xl text-center my-4 flex items-center gap-x-4">
+    <Icon name={"mdi:games"} />
+    <span>Hit and Blow</span>
+  </h1>
+  <Card bgColor="vanilla">
+    <div class="flex flex-col gap-y-4">
+      <div>
+        <p>Reactで作った色あてHitandBlowです。</p>
+        <p>PC、スマホで快適に遊べます。</p>
+      </div>
+      <a href="https://hit-a-blow.pages.dev/" class="flex gap-x-2 items-center">
+        <Icon name={"mdi:link"} size={28} />
+        <span class="text-sm">https://hit-a-blow.pages.dev</span>
+      </a>
+    </div>
+  </Card>
+</div>

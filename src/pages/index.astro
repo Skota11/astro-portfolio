@@ -1,16 +1,15 @@
 ---
-import "../styles/global.css";
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import Profile from "../components/Profile.astro"
-import Link from "../components/Link.astro";
-import Status from "../components/Status.astro";
+import Profile from "../components/index/Profile.astro";
+import Link from "../components/index/Link.astro";
+import Status from "../components/index/Link.astro";
 ---
 
 <Layout>
-	<div class="w-screen max-w-2xl m-auto p-4 flex flex-col gap-y-4">
-		<Profile />
-		<Link />
-		<Status />
-	</div>
+  <div class="w-screen max-w-2xl m-auto p-4 flex flex-col gap-y-4">
+    <Profile />
+    <Link />
+    <Status />
+  </div>
 </Layout>
