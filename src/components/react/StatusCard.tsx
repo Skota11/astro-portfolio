@@ -9,7 +9,7 @@ export default function Component() {
   const [status, setStatus] = useState<{ status: string, activities: [{ name: string, details: string }] | [] } | undefined>(undefined)
   const f = async () => {
     setStatus(undefined)
-    const _status = await (await fetch("https://my-activity-discord.onrender.com/activity/896299292845817856/")).json()
+    const _status = await (await fetch("https://discord.skota11.com/activity/896299292845817856/")).json()
     setStatus(_status)
   }
   useEffect(() => {
